@@ -125,11 +125,11 @@
     }
 
     #slideshow img {
-      width: 100%;
+      width: auto;
       height: auto;
       opacity: 0;
       transition: opacity 1s ease-in-out; /* Smooth fade-in transition */
-      border-radius: 20px;
+      border-radius: 50px;
 }
     p
       {
@@ -138,7 +138,12 @@
         font-style: italic;
 
       }
-
+      .top
+      {
+        color:green;
+        font-weight: bold;
+      }
+   
   </style>
 </head>
 <body>
@@ -148,10 +153,29 @@
   <div class="overlay" id="musicOverlay">
     <button onclick="startMusic()">Start Your Celebration My Sweet Heart 🎉</button>
   </div>
+  <div classs="container text-center">
+    <h1 class="top">❤❤❤My Sweet Girl You are my World❤❤❤</h1>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-4">
+      </div>
+      <div class="col-4">
+        <div id="slideshow" class="mt-5 mb-4">
+          <img src="7.jpg" 
+               alt="Photo 1" 
+               class="img-fluid rounded shadow-lg">
+        </div>
+      </div>
+      <div class="col-4">
+      </div> 
+
+    </div>
+   
 
   <!-- Main Content -->
   <div class="container text-center">
-    <h1><marquee>Happy Birthday, My Love!</marquee></h1>
+    <h1><marquee>💖💖💖Happy Birthday, My Love!💖💖💖</marquee></h1>
     <div class="poem">
       Roses are red,<br>
       Violets are blue,<br>
@@ -164,12 +188,12 @@
     </div>
 
     <!-- Slideshow -->
-    <div id="slideshow" class="mt-5 mb-4">
+    <!-- <div id="slideshow" class="mt-5 mb-4">
       <img src="7.jpg" 
            alt="Photo 1" 
            class="img-fluid rounded shadow-lg">
     </div>
-  </div>
+  </div> -->
 
   <!-- Audio -->
   <audio id="music" src="01-Monk-Turner-Fascinoma-Its-Your-Birthday(chosic.com).mp3" loop></audio>
